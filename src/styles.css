@@ -30,13 +30,16 @@ h1 {
 .hero {
     background-color: var(--branding-color);
     padding: 120px 100px;
+    max-width: 100%;
 }
+
 
 .title {
     border-top: var(--border-properties);
     border-bottom: var(--border-properties);
     border-radius: 2px;
     padding:25px;
+    text-align: center;
 }
 
 .title h3{
@@ -48,14 +51,13 @@ h1 {
 }
 
 .intro{
-    margin:50px;
+    margin:0px;
 }
+
+/*landing page left section*/
 
 .page-summary {
     margin: 0px;
-    padding: 10px 50px;
-    border-right: var(--border-properties);
-    border-radius: 2px;
 }
 
 .page-summary h2{
@@ -69,6 +71,11 @@ h1 {
     line-height: 2;
     text-align: left;
     margin:0px;
+}
+
+.hero-button {
+    margin: 0;
+    padding: 0;
 }
 
 .btn{
@@ -85,31 +92,23 @@ h1 {
     font-weight:bold;
 }
 
-.profile-info {
-    padding:10px 0px 0px 50px;
-}
+/*landing page right section*/
 
-.portfolio-image {
-    padding: 0px 0px 50px 0px;
+.profile-info {
+    margin: 0px;
+    padding: 50px auto;
 }
 
 .portfolio-image img{
     border-radius: 30px;
-    width: 500px;
-    height: 350px;
+    max-width: 100%;
+    height: auto;
 }
 
-.blog {
-    font-style: italic;
-    font-size: 30px;
-    font-weight: normal;
-    border-top: var(--border-properties);
-    border-radius: 2px;
-    padding:60px 0px;
-}
 
+/*project section*/
 .body-projects {
-    margin:75px;
+    margin:75px 100px;
 }
 
 .body-title h3{
@@ -117,15 +116,15 @@ h1 {
     font-weight:bold;
 }
 
-.project-summary {
-    padding:50px;
+.project-summary, .project-summary-left {
+    padding:50px 0;
+    margin-bottom: 50px;
 }
 
 .portfolio-screenshots-right {
     border-right: var(--border-properties);
     padding-right: 20px;
     margin: 0;
-    width: 320px;
     height: 320px;
 }
 
@@ -141,7 +140,6 @@ h1 {
     border-left: var(--border-properties);
     padding-left: 20px;
     margin:0;
-    width: 320px;
     height: 320px;
 }
 
@@ -166,12 +164,127 @@ h1 {
     font-weight: bold;
 }
 
+/*contact section*/
+
 .contact-me {
     background-color: var(--branding-color);
     padding: 100px;
+    width: 100%;  
 }
 
 .contact-info {
     border-left: var(--border-properties);
     padding-left: 20px;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .hero {
+        padding:20px 50px;
+    }
+
+    .title {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .title h3 {
+        font-size: 20px;
+    }
+
+    .title + .intro {
+        padding: 0;
+        text-align: center;
+      }
+    
+      .page-summary {
+        padding: 0px;
+        border-right: none;
+        text-align: center;
+      }
+    
+      .page-summary h2 {
+        font-size: 25px;
+      }
+    
+      .page-summary p {
+        font-size: 18px;
+        text-align: center;
+        margin:0;
+      }
+
+      .hero-button {
+        padding: 20px 0px;
+      }
+
+      .intro .col-6:nth-child(2) {
+        display: none;
+      }
+    
+      .intro .col-6:nth-child(1) {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+      }
+
+      .intro .col-6:nth-child(1) > .page-summary > p.mb-5 {
+        margin-bottom: 0 !important;
+      }
+
+
+/*Body section style*/
+
+    .body-title h3{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .project-summary, .project-summary-left{
+        display:flex;
+        flex-direction: column;
+        margin: 0px
+    }
+
+    .col-4:nth-child(1) {
+        display: none;
+      }
+    
+    .col-8:nth-child(2) {
+        margin: 0 auto;
+        width: 100%;
+      }
+
+    .project-summary-left .col-4:nth-child(2) {
+        display: none;
+    }
+    
+    .project-summary-left .col-8:nth-child(1) {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .project-details h4 {
+        font-size: 25px;
+    }
+
+    .project-details p, li{
+        font-size: 16px;
+    }
+
+
+/*Contact section style*/
+    .contact-me{
+        padding: 20px 0px;
+    }
+
+    .work-with-me{
+        padding: 0px 0px 0px 30px;
+    }
+
+    .contact-info {
+        padding: 0px 0px 0px 30px;
+    }
+
 }
