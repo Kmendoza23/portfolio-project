@@ -238,6 +238,9 @@ p {
   }
 
   /*Body section style*/
+  .body-projects {
+    margin: 30px 20px;
+  }
 
   .body-title h3 {
     text-align: center;
@@ -289,6 +292,10 @@ p {
   .contact-info {
     padding: 0px 0px 0px 30px;
   }
+
+  .nav a {
+    font-size: 14px;
+  }
 }
 
 /*/////*/
@@ -332,4 +339,44 @@ p {
   border-radius: 30px;
   max-width: 100%;
   height: auto;
+}
+
+/*////*/
+/*//nav bar css properties//*/
+/*////*/
+
+.nav {
+  padding: 20px;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+.nav a:hover,
+.nav li.active a {
+  color: blue;
+}
+
+.logo {
+  max-height: 40px;
+  margin: 0;
+  padding: 0;
 }
