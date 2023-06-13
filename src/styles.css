@@ -30,6 +30,10 @@ h1 {
   font-size: 86px;
 }
 
+h4 {
+  font-size: 30px;
+}
+
 .hero {
   background-color: var(--branding-color);
   padding: 120px 100px;
@@ -167,17 +171,51 @@ p {
   font-weight: bold;
 }
 
-/*contact section*/
-
-.contact-me {
-  background-color: var(--branding-color);
-  padding: 100px;
-  width: 100%;
+/*links section*/
+footer {
+  margin: 60px 0;
 }
 
-.contact-info {
-  border-left: var(--border-properties);
-  padding-left: 20px;
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  margin: 40px 0;
+}
+
+footer .email-link:hover {
+  color: var(--secondary-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--secondary-color);
+  background: var(--branding-color);
+}
+
+/*contact section*/
+
+footer .contact-me {
+  background-color: var(--branding-color);
+}
+
+footer .contact-info,
+.work-with-me {
+  padding: 50px 140px;
+  text-align: left;
+}
+
+footer .contact-me p {
+  margin: 0;
 }
 
 @media (max-width: 900px) {
@@ -278,19 +316,6 @@ p {
   .project-details p,
   li {
     font-size: 16px;
-  }
-
-  /*Contact section style*/
-  .contact-me {
-    padding: 20px 0px;
-  }
-
-  .work-with-me {
-    padding: 0px 0px 0px 30px;
-  }
-
-  .contact-info {
-    padding: 0px 0px 0px 30px;
   }
 
   .nav a {
