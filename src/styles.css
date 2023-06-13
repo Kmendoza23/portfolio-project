@@ -36,7 +36,7 @@ h4 {
 
 .hero {
   background-color: var(--branding-color);
-  padding: 120px 100px;
+  padding: 80px 100px 100px;
   max-width: 100%;
 }
 
@@ -332,7 +332,7 @@ footer .contact-me p {
 /*about css*/
 
 .content-container {
-  padding: 160px 20px;
+  padding: 50px 20px;
 }
 
 .content {
